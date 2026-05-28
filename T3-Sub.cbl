@@ -1,0 +1,15 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. T3-Sub.
+
+       DATA DIVISION.
+       LINKAGE SECTION.
+       01  LS-NUM1          PIC 9(03).
+       01  LS-NUM2          PIC 9(03).
+       01  LS-SUM           PIC 9(05).
+       01  LS-PRODUCT       PIC 9(06).
+
+       PROCEDURE DIVISION USING LS-NUM1, LS-NUM2, LS-SUM, LS-PRODUCT.
+       000-CALC-LOGIC.
+           COMPUTE LS-SUM = LS-NUM1 + LS-NUM2.
+           COMPUTE LS-PRODUCT = LS-NUM1 * LS-NUM2.
+           EXIT PROGRAM.
